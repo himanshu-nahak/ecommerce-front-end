@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+	<title>Payment</title>
+<head>
+<meta charset = "UTF-8" />
+<style>
+body {
+  font-family: Arial;
+  font-size: 17px;
+  padding: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-50 {
+  -ms-flex: 50%;
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%;
+  flex: 75%;
+}
+
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: orange;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #ff6600;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+}
+
+hr {
+	border: 1px solid #f1f1f1;
+	margin-bottom: 25px;
+}
+.logo-sm{
+  width:40px;
+  height: 40px;
+  margin: 0.1em;
+  margin-right: 10px;
+}
+.logo-lg{
+  width:100px;
+  height: 100px;
+  margin: 1em;
+  
+}
+.orangetxt{
+      color: #f4511e;
+    }
+.crcard{
+  height: 40px;
+  width: 120px;  
+}
+</style>
+</head>
+<body>
+
+<img src="../assets/tradex-logo.png" class="logo-sm"/> 
+<hr>
+<h1 style="color:orange;">Payment Details</h1>
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form target="_blank" action="action.php" method="POST">
+      
+        <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name/ Company Name</label>
+            <input type="text" id="name" name="firstname" placeholder="Name">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="em" name="email" placeholder="name@domain.com">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="add" name="address" placeholder="Address">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="City">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="State">
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="100001">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <img src="../assets/mastercard-logo-visa.png" class="crcard"/>
+	      
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="Name">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="num" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="month" name="expmonth" placeholder="January">
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="year" name="expyear" placeholder="2020">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="111">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+	<button onclick="nxt()" type="button" name="submit" class="btn">Place your order and pay</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+<script>
+	function nxt(){
+	var name=document.getElementById("name").value;
+	var em=document.getElementById("em").value;
+	var add=document.getElementById("add").value;
+	var city=document.getElementById("city").value;
+	var state=document.getElementById("state").value;
+	var zip=document.getElementById("zip").value;
+	var cname=document.getElementById("cname").value;
+	var num=document.getElementById("num").value;
+	var month=document.getElementById("month").value;
+	var year=document.getElementById("year").value;
+	var cvv=document.getElementById("cvv").value;
+	
+	if(name!=="" && em!=="" && add!=="" && city!=="" && state!=="" && zip!=="" && cname!=="" && num!=="" && month!=="" && year!=="" && cvv!==""){
+		window.location.href = 'one.html';
+	}
+	else{
+		alert("Please enter valid inputs for all the fields!");
+	}
+}
+</script>
+</html>

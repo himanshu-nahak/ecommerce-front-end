@@ -1,0 +1,69 @@
+.container
+{
+	
+	
+	padding:40px;
+	
+}
+
+
+
+
+
+
+
+.sort 
+{
+  display: flex;
+}
+
+.product-filter h2
+{
+  flex-grow: 1;
+}
+.product-filter 
+{
+  display: flex;
+}
+.newarrival
+{
+background:green;
+width:50px;
+color:white;
+font-size::17px;
+font-weight:bold;
+}
+.cold-md-7 h2
+{
+color:#555;
+}
+.stars
+{
+height:115px;
+}
+.price
+{
+color:black;
+font-size:26px;
+font-weight:italic;
+padding-top:10px;
+}
+input
+{
+border:1px solid #ccc;
+font-weight:bold;
+height:33px;
+text-align:center;
+width:30px;
+
+}
+.cart
+{
+background:$FFF80F;
+color:#FFFFFF;
+font-size:15px;
+margin-left:20px;
+}
+.checked {
+  color: orange;
+}

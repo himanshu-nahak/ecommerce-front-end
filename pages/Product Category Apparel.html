@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <!-- JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        
+        <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+        <link rel="stylesheet" href="./css/css/mycss.css">
+
+        <title>TradEX</title>
+
+
+        <style>
+          .orangetxt{
+            color: #f4511e;
+          }
+          .orangebg{
+            background-color: #f4511e;
+          }
+
+          .jumbotron{
+                background-color: #f4511e; /* Orange */
+                color: #ffffff;
+               
+            }
+
+            .card:hover {
+              box-shadow: 5px 0px 40px rgba(244,81,30, .5);
+            }
+            .card{
+              margin: 0.1em;
+
+            }
+            .orangebtn{
+        background-color: #f4511e; /* Orange */
+        color: white;
+        border: none;
+      }
+      .orangebtn:hover{
+        background-color: #db4214; /* Orange */
+        color: white;
+        border: none;
+      }
+      .logo-sm{
+              width:40px;
+              height: 40px;
+              margin: 0.1em;
+              margin-right: 10px;
+            }
+            .logo-lg{
+              width:100px;
+              height: 100px;
+              margin: 1em;
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+          <img src="../assets/tradex-logo.png" class="logo-sm">
+            <a class="navbar-brand" href="../index.html">TradEX</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+      
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+              <ul class="navbar-nav mr-auto">
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="VendorWelcome.html">Sell With Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html#cat">Catalog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="cusenquiry.html">Enquires Received</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="prod1.html">Enquires Sent</a>
+                </li>
+    
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search Requirement" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+        <br>
+        <br>
+        
+          
+          <!--CATEGORIES-->
+          <br>
+          <h1 style="text-align: center;" id="cat" class="orangetxt">APPAREL</h1>
+          <div class="alert alert-success collapse" role="alert" id="myAlert">
+            A simple success alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+          </div>
+        <!--Product Listing-->
+        <div class="card-group">
+            <div class="card" style="width: 18rem;">
+              <a href="Product-Shirt2.html">
+                <img class="d-block w-100" src="../assets/teeblue.webp" alt="Card image cap">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title orangetxt">Always Blue</h5>
+                <p class="card-text">This is a royal blue melange 100% cotton Redwolf tee.</p>
+                <button type="button" class="btn orangebtn" data-toggle="modal" data-target="#exampleModal">
+                  Send Enquiry
+                </button>
+              </div>
+            </div>
+            
+            <div class="card" style="width: 18rem;">
+              <a href="Product-Shirt1.html">
+                <img class="d-block w-100" src="../assets/goku.webp" alt="Card image cap">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title orangetxt">King Kai Kanji</h5>
+                <p class="card-text">
+                  There’s no denying that anime shows are quite captivating but this particular show had the fans around the world go crazy.
+                  The king kai print in the front means ‘turtle’, symbolizing the master you’ve trained under and the print on the back, means the world’s king.
+                  You don’t need a dragon ball to wish for awesome anime t-shirts. With this incredible tee, fulfill the wish of being a part of this cool training group.</p>
+                <a href="#" class="btn orangebtn" data-toggle="modal" data-target="#exampleModal">Send Enquiry</a>
+              </div>
+            </div>
+           
+              <div class="card" style="width: 18rem;">
+              <a href="Product-Shirt3.html">
+                  <img class="d-block w-100" src="../assets/snoopy1.webp" alt="Card image cap">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title orangetxt">Lazy Tee</h5>
+                <p class="card-text">Printed on our crazy-soft, super-smooth, pre-shrunk, 100% premium organic cotton tees. All of the items in our store are hand-made to order. We simply wouldn't print on any shirt that we don't wear ourselves, takes us anywhere from 2 to 3 days to prepare and ship your t shirts.</p>
+                <a href="#" class="btn orangebtn" data-toggle="modal" data-target="#exampleModal">Send Enquiry</a>
+              </div>
+            </div>
+          </div>
+          
+        </div> 
+        <div class="card-group">
+          <div class="card" style="width: 18rem;">
+            <a href="Product-Keyboard.html">
+              <img class="d-block w-100" src="../assets/shoes.jpeg" alt="Card image cap">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title orangetxt">Shoes</h5>
+              <p class="card-text">Asian Shoes are for regular comfort wear. The body of this shoe is in a neutral grey colour with light blue accents. The upper material keeps air circulation while moderated ankles take full care of your feet when you go out for running. </p>
+              <a href="#" class="btn orangebtn" data-toggle="modal" data-target="#exampleModal">Send Enquiry</a>
+            </div>
+          </div>
+          
+          <div class="card" style="width: 18rem;">
+            <a href="Product-Mouse.html">
+              <img class="d-block w-100" src="../assets/goggle.jpeg" alt="Card image cap">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title orangetxt">Sunglasses</h5>
+              <p class="card-text">Unapologetically fashionable Go Skates sunglasses made from Plastic, this comes in a combination of Black front and Black temple with Smoke colored Polycarbonate lens
+              </p>
+              <a href="#" class="btn orangebtn" data-toggle="modal" data-target="#exampleModal">Send Enquiry</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <a href="Product-Pendrive.html">
+              <img class="d-block w-100" src="../assets/cap.jpeg" alt="Card image cap">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title orangetxt">Caps</h5>
+              <p class="card-text">Navy Blue solid dry fit training Cap and has a visor</p>
+              <a href="#" class="btn orangebtn" data-toggle="modal" data-target="#exampleModal">Send Enquiry</a>
+            </div>
+          </div>
+        </div>        
+        <div class="card-group">
+          <div class="card" style="width: 18rem;">
+            <img class="d-block w-100" src="../assets/watch.jpeg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title orangetxt">Watches</h5>
+              <p class="card-text">Go Skate - Black Dial Multifunction Watches for Guys</p>
+              <a href="#" class="btn orangebtn" data-toggle="modal" data-target="#exampleModal">Send Enquiry</a>
+            </div>
+          </div>
+          
+          <div class="card" style="width: 18rem;">
+            <img class="d-block w-100" src="../assets/jeans.jpeg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title orangetxt">Denim Jeans</h5>
+              <p class="card-text">Blue medium wash 5-pocket mid-rise jeans, clean look with no fade, has a button and zip closure, waistband with belt loops</p>
+              <a href="#" class="btn orangebtn" data-toggle="modal" data-target="#exampleModal">Send Enquiry</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img class="d-block w-100" src="../assets/bag.jpeg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title orangetxt">Bags</h5>
+              <p class="card-text">
+                This lightweight backpack comes with a capacity of 33 litres and is well suited for your daily needs. The bag is compact and has a casual appeal to it. Made of high quality polyester, the bag has 3 compartments and a quick access pocket. It is ideal for carrying your textbooks, notebooks, and journals for your school/college or even for a short trip over the weekend.</p>
+              <a href="#" class="btn orangebtn" data-toggle="modal" data-target="#exampleModal">Send Enquiry</a>
+            </div>
+          </div>
+        </div> 
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Request Quotation from Seller</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Quantity</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                      <label class="form-check-label" for="defaultCheck1">
+                        For Reselling
+                      </label><br>
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                      <label class="form-check-label" for="defaultCheck2">
+                        For Business Use
+                      </label>
+                    </div>
+                  </div>
+
+
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button onclick="success()" type="button" class="btn orangebtn" data-dismiss="modal" id="rqstQt">Request Quote</button>
+                
+              </div>
+
+              
+            </div>
+          </div>
+        </div>
+        
+        <div class="jumbotron text-center" style="margin-bottom:0">
+            <h3>About Us</h3>
+            <p>TradEX is an e-marketplace which brings wholesalers, suppliers & manufacturers together. </p>
+         </div>
+        <script>
+function success(){
+	var qty=document.getElementById("exampleFormControlInput1").value;
+	if(qty!==""){
+		window.location.href = 'quotation.html';
+	}
+	else{
+		alert("Please enter a valid input for Quantity field!");
+		}
+	}
+          $(document.ready(function(){
+            $('#rqstQt').click(function(){
+              $('#myAlert').show('fade');
+            })
+
+          }));
+
+
+        </script>
+    </body>
+</html>
